@@ -1,0 +1,29 @@
+<plugin
+		id="com.vp.plugin.sample.sequenceDiagramPlugin"
+		name="Sequence Diagram Plugin"
+		description="Sample plugin for generating Sequence Diagram"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.sequenceDiagramPlugin.SequenceDiagramPlugin">
+	
+	<actionSets>
+  		<actionSet id="com.vp.plugin.sample.sequenceDiagramPlugin.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.sequenceDiagramPlugin.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.sequenceDiagramPlugin.actionset1.SequenceDiagramActionControl"
+					actionType="generalAction"
+      		name="Sequence Diagram Plugin"
+		      description="Sample plugin for generating Sequence Diagram"
+					style="normal"
+          icon="icon/plugin_icon.png"
+          tooltip="Sequence Diagram"
+					toolbarPath="com.vp.plugin.sample.sequenceDiagramPlugin.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.sequenceDiagramPlugin.SequenceDiagramAction"/>
+			</action>
+		</actionSet>
+
+	</actionSets>	
+</plugin>
